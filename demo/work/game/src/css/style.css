@@ -1,0 +1,262 @@
+html {
+	font-size: 20px;
+}
+
+body {
+	background: #e5e5e5;
+}
+
+.pagination {
+	position: absolute;
+	z-index: 20;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.swiper-pagination-switch {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background: #fff;
+	margin: 0 5px;
+	opacity: 0.4;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+.swiper-active-switch {
+	background: #fff;
+	opacity: 1;
+}
+
+.mar-r-0 {
+	margin-right: 0 !important;
+}
+
+.swiper-container {
+	width: 18.75rem;
+	height: 7.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 10;
+}
+
+.swiper-wrapper,
+.swiper-slide,
+.swiper-slide img {
+	width: 18.75rem;
+	height: 7.5rem;
+	position: relative;
+	z-index: 10;
+}
+
+.type-list {
+	width: 18.75rem;
+	height: 5.35rem;
+	background: #FFF;
+}
+
+.type-list li {
+	float: left;
+	width: 6.2rem;
+	height: 5.35rem;
+}
+
+.type-list li a {
+	display: block;
+	text-align: center;
+	width: 6.2rem;
+	height: 5.35rem;
+}
+
+.type-list li a img {
+	width: 2.6rem;
+	margin-top: 1rem;
+}
+
+.type-list li a p {
+	font-size: 0.7rem;
+	margin-top: 0.3rem;
+	color: #666;
+	line-height: 0.6rem;
+}
+
+.push-game {
+	width: 18.75rem;
+	height: 5.25rem;
+	background: #f2f2f2;
+	display: block;
+	padding: 0.75rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.push-game img {
+	float: left;
+	width: 3.75rem;
+}
+
+.push-game div {
+	float: left;
+	width: 7.5rem;
+	margin-left: 0.825rem;
+}
+
+.push-game div h4 {
+	font-size: 0.9rem;
+	line-height: 1.075rem;
+	color: #333;
+}
+
+.push-game div .game-size {
+	font-size: 0.6rem;
+	line-height: 1.125rem;
+	color: #666;
+}
+
+.push-game div .game-cha {
+	font-size: 0.7rem;
+	line-height: 1.175rem;
+	color: #abacac;
+	margin-top: 0.425rem;
+}
+
+.push-game .push-btn {
+	float: left;
+	width: 5rem;
+	height: 2rem;
+	background: #ff9c00;
+	border-radius: 5px;
+	line-height: 2rem;
+	text-align: center;
+	font-size: 0.9rem;
+	color: #FFF;
+	margin-top: 0.85rem;
+}
+
+.more-game {
+	width: 18.75rem;
+	height: 1.45rem;
+	border-bottom: 1px solid #e6e6e6;
+	position: relative;
+	background: #FFF;
+}
+
+.more-game span {
+	position: absolute;
+	color: #9a9a9a;
+	font-size: 0.6rem;
+	width: 3.575rem;
+	left: 50%;
+	top: 1.15rem;
+	background: #FFF;
+	text-align: center;
+	margin-left: -1.7875rem;
+	line-height: 0.5rem;
+}
+
+.game-wrap {
+	width: 18.75rem;
+	padding: 1.25rem 0.75rem 0.3rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-bottom: 1px solid #e6e6e6;
+	background: #FFF;
+}
+
+.game-wrap .title h5 {
+	float: left;
+	font-size: 0.9rem;
+	color: #000;
+	font-weight: bold;
+	font-weight: normal;
+}
+
+.game-wrap .title span {
+	height: 0.75rem;
+	font-size: 0.6rem;
+	line-height: 0.75rem;
+	float: right;
+	padding-left: 0.875rem;
+	background: url(../img/hint.png) no-repeat center left;
+	background-size: auto 100%;
+	color: #fc1212;
+}
+
+.game-wrap .game-list {
+	width: 17.25rem;
+	margin-top: 0.7rem;
+}
+
+.game-wrap .game-list li {
+	float: left;
+	width: 4.75rem;
+	margin-right: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.game-wrap .game-list li a {
+	text-align: center;
+	display: block;
+	width: 4.75rem;
+	position: relative;
+}
+
+.game-wrap .game-list li a img {
+	width: 4.75rem;
+}
+
+.game-wrap .game-list li a h6 {
+	font-size: 0.7rem;
+	line-height: 0.6rem;
+	margin: 0.6rem 0 0.5rem;
+	color: #666;
+}
+
+.game-wrap .game-list li a .hot,
+.game-wrap .game-list li a .new {
+	width: 2.275rem;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.game-wrap .game-list li a button {
+	width: 4rem;
+	height: 1.5rem;
+	color: #00b1e5;
+	border: 1px solid #00b1e5;
+	font-size: 0.7rem;
+	line-height: 1.5rem;
+	text-align: center;
+	background: #fff;
+	border-radius: 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.waiting {
+	margin-top: 0.75rem;
+}
+
+/*.waiting,
+.waiting img {
+	width: 17.2rem;
+	height: 4.775rem;
+}*/
+
+.to-top {
+	position: fixed;
+	width: 2.75rem;
+	height: 2.75rem;
+	background: url(../img/totop.png) no-repeat center center;
+	background-size: 100% 100%;
+	right: 0.8rem;
+	bottom: 1.5rem;
+}

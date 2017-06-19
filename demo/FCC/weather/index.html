@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather NPC</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="a.css">
+	<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+  <nav id="topNav">
+        	<ul>
+            	<li><a href="//petergooo.github.io" title="Home">Home</a></li>
+            	<li><a href="#" title="Meau">Meau</a></li>
+            	<li><a href="#" title="about" id="about">About</a></li>
+          		<li><a href="#" title="animate" id="line">本页面动画</a>
+                	<ul>
+                    	<li id="line1">life的动画</li>
+                        <li id="line2">city的动画</li>
+                    </ul>
+                </li>
+          </ul>
+        </nav>
+
+  <div id="today-weather" class="weather">
+    <p>Today's Weather</p>
+	<div id="city" class="w-city">	所在城市	</div>
+	<div id="day" class="w-day">
+		<ul>
+			<li id="day1">今天时间</li>
+			<li id="day2">农历</li>
+			<li id="day3">星期*</li>
+		</ul>
+	</div>
+	<div id="w-info" class="w-info">
+	    <ul>
+	    		<li id="w-info1">风向及风力</li>
+	    		<li id="w-info2">湿度</li>
+	    		<li id="w-info3">天气</li>
+	    		<li id="w-info4">温度</li>
+	    		<li id="w-info5">空气质量</li>
+	    		<li id="w-info6">最新发布时间</li>
+	    </ul>
+	</div>
+	<div class="clear"></div>
+	<div id="life" class="w-life">
+	    <p class="life-p">life</p>
+		<ul id="life-ul">
+			<li id="life-yi">穿衣:</li>
+			<li id="life-kt">空调:</li>
+			<li id="life-yd">运动:</li>
+			<li id="life-zyx">紫外线:</li>
+		</ul>
+	</div>
+
+	<div id="future" class="w-future">
+		week weather:
+		<ul id="w-future-ul" class="w-future-ul">
+
+		</ul>
+	</div>
+
+	<div class="clear"></div>	<br>	<br>
+	<hr>	<br>
+	<p>By  &nbsp&nbsp <a href="//petergooo.github.io">执念</a></p><br>
+
+  </div>
+
+</body>
+	<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+	<script src='http://pv.sohu.com/cityjson?ie=utf-8'></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src='a.js'></script>
+</html>

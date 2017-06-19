@@ -1,0 +1,75 @@
+  *{
+  	padding: 0;
+  	margin: 0;
+  }
+  body{
+	  text-align: center;
+	  color: white;
+	  font-size: 25px;
+	  background-color: #111;
+	  background-repeat: no-repeat;    /* 这个与下一行, 规定了背景图片的格式, 不重复   铺满*/
+	  background-position: center;     /**/
+  }
+
+  li{
+  	list-style-type: none;     /* 取消li 的 - 标记*/
+  }
+
+  .clear{
+    visibility:hidden;
+    clear: both;  /*清除float样式  必须需要*/
+  }
+/*---------------*---------------*------------------*----------------------*/
+  .weather{
+   	margin: 80px 50px 0;
+  	background-color: rgba(44,44,44,0.7);    /* 设置透明度 */
+  	box-shadow: 0 0 1px #111;
+  }
+  
+  .w-city{
+  	float: left;       /* 浮动, 使几个div 在同一行, */
+  	width: 150px;
+  	font-size: 5px;
+    position:absolute;   /* 为了jquery 中的 $(selector).animate({params},speed,callback);*/
+  }
+  .w-day{
+  	float: left;    /**/
+  	font-size: 25px;
+    margin-left: 350px;
+  }
+  
+  .w-info{
+  	float: right;      /* 右侧浮动*/
+  }
+  
+
+  .w-life{
+  	text-align: left;     	       
+    color: #007fff;
+  }
+  .w-future{
+    font-size: 30px;
+  }
+
+  .w-future-ul-li{
+    font-size: 15px;
+  	margin-left:50px;
+  	float: left;    /* 第一个从左开始 */
+  }
+  
+  hr{
+    width: 70%;
+    margin-left: 15%;
+    color: orange;
+  }
+  a{
+    color: white;
+    text-decoration:none;   /* 去掉链接默认的下划线*/
+  }
+
+
+
+
+
+
+

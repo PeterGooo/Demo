@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro  Clock</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="clock.css">
+	<script src="clock.js"></script>
+</head>
+<body>
+    <h1>FreeCodeCamp  Pomodoro  Clock</h1>
+    <div class="main">
+        <div>
+        	<button id="sub"> - </button>
+        	<span id="time-a">00:25:00</span>
+        	<button id="add"> + </button>
+        </div>
+        <div>
+        	<button id="start">Start</button>
+        	<button id="pause">Pause</button>
+        </div>
+        <div>
+        	<input type="text" name="" id="input">
+        	<button id="set">Go</button>
+        </div>
+        <div>
+        	<span id="time-b">00:00:00</span>
+        </div>
+    	
+    </div>
+</body>
+<script type="text/javascript">
+
+	var sub=document.getElementById("sub");
+	var add=document.getElementById('add');
+
+	var btnStart=document.getElementById('start');
+	var btnStop=document.getElementById('pause');
+	var set=document.getElementById('set');
+	
+	var input=document.getElementById('input');
+
+	var timeA = document.getElementById('time-a');
+	var timeB = document.getElementById('time-b');
+
+
+	var h = 00, m = 25, s = 00;
+	var t,v;
+
+	sub.onclick=function() {
+		return m=m-1;
+	}
+	add.onclick=function() {
+		return m=m+1;
+	}
+
+	btnStart.onclick=function(){
+		var str='0'+ h +":"+ m +":"+ s;
+		timeA.innerHTML = str;
+		s -=1;
+		if (s<0) {
+			s = 59;
+			m = m-1;
+		}
+		
+		t = setTimeout("btnStart.onclick()", 1000);
+
+		if (m<0) {
+			clearTimeout(t);
+			alert("Time run out !");
+		}
+
+	}
+	btnStop.onclick = function(){
+		clearTimeout(t);
+	}
+
+    
+		
+	set.onclick=function() {
+		var n = input.value;
+		n = n-1;
+		var str='0'+ h +":"+ n +":"+ s;
+		timeB.innerHTML = str;
+		s -=1;
+		if (s<0) {
+			s = 59;
+			n = n-1;
+		}
+		
+		v = setTimeout("set.onclick()", 1000);
+
+		if (n<0) {
+			clearTimeout(v);
+			alert("Time run out !");
+		}
+		
+	   	
+	}
+	/*
+	function go (a) {
+		a =a-1;
+		var str='0'+ h +":"+ a +":"+ s;
+		timeB.innerHTML = str;
+		s -=1;
+		if (s<0) {
+			s = 59;
+			a = a-1;
+		}
+		
+
+		if (a<0) {
+			clearInterval(v);
+			alert("Time run out !");
+		}
+	}
+	*/
+
+
+</script>
+</html>

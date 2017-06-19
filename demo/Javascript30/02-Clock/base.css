@@ -1,0 +1,79 @@
+  html{
+  	background-color: #73c4d2;   /*背景色*/
+  }
+  body{
+  	display: flex;   /*使用flex布局*/
+  	flex: 1;
+  	align-items: center;    /*垂直居中*/
+  	justify-content: center;    /*水平居中*/
+  	min-height: 100vh;   /* 全屏,  最小高度为100vh     vh单位是指的 view height,  */
+  	font-size: 2rem;    /* rem 动态 响应式大小的单位. (描述不严谨) */
+  }
+
+  .main{      
+  	height: 30rem;
+  	width: 30rem;
+  	border: 20px solid white;
+  	border-radius: 50%;
+  	position: relative;  /*相对定位*/
+  	padding: 2rem;
+  }
+
+  .clock{   /* clock的指针  外面的div框, */
+  	position: relative;
+  	height: 100%;
+  	width: 100%;
+  	/*transform: translateY(-3px);*/
+  }
+
+
+  .hand{
+  	width: 50%;
+  	height: 3px;
+  	/*background-color: black;*/
+  	position: absolute;  /*绝对定位, 再和下面的top: 50% 为了让指针固定在表盘中心*/
+  	top: 50%; 
+
+  	transform-origin: 100%;  
+    /*这个属性是为了让我们更改一个元素变形的原点.  例如, rotate()的transform-origin 是旋转的中心点. */
+    /*上面代码用的 100% 这个值, 是表明在对应元素的最右边  0%就是最左边了. 50%就是中间咯*/
+    /*详情文档说明请复制下面一行的链接 打开MDN文档查看, 英文好的建议在页面的最 右下角, 选择英文.*/
+    /*https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin*/
+
+
+  	/*transform: rotate(90deg);  为了符合现实, 就默认从0开始*/
+  	transition: all 0.05s;
+    transition-timing-function: linear;
+  	/*transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);*/
+  }
+
+
+  /*设置指针的样式.     有颜色和 长度. */
+  .second-hand{
+    border-radius: 50% 10% 10% 50%;    /*设置指针的radius   更像真实的指针.*/
+  	width: 50%;
+  	background-color: blue;
+  }
+  .min-hand{
+  	width: 45%;
+    height: 4px;
+    border-radius: 50% 10% 10% 50%;
+    margin-left: 5%;
+  	background-color:  green;
+  }
+  .hour-hand{
+  	width: 40%;
+    height: 5px;
+    border-radius: 50% 10% 10% 50%;
+    margin-left: 10%;
+  	background-color:  red;
+  }
+
+  .point{      /* 中心点的样式.*/
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: calc(50% - 0.5rem);
+    top: calc(50% - 0.5rem);
+  }

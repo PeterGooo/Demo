@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hi vue</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<script type="text/javascript" src="vue.js"></script>
+	<script src="axios.min.js"></script>
+	<script src="lodash.min.js"></script>
+	
+</head>
+
+<body>
+	
+	<h3>1.</h3>
+	 <div id="app">
+		{{ message }}
+	</div>
+<hr>
+	
+	<h3>2.</h3>
+	<div id="app-2">
+  		<span v-bind:title="message">
+  		  Hover your mouse over me for a few seconds to see my dynamically bound title!
+  		</span>
+	</div>
+<hr>
+	<h3>3.</h3>
+	<div id="app-3">
+		<p v-if="seen">Now you see me</p>
+	</div>
+<hr>
+
+	<h3>4.</h3>
+	<div id="app-4">
+		<ul>
+			<template v-for="(todo, index) in todos">
+			<li >
+				{{todo.text}}
+			</li>
+			<li> {{ index }} </li>
+			</template>
+		</ul>
+	</div>
+<hr>
+
+	<h3>5.</h3>
+	<div id="app-5">
+  		<p>{{ message }}</p>
+  		<button v-on:click="reverseMessage">Reverse Message</button>
+	</div>
+<hr>
+
+	<h3>6.</h3>
+	<div id="app-6">
+  		<p>{{ message }}</p>
+  		<input v-model.lazy="message">
+	</div>
+<hr>
+
+	<h3>7.</h3>
+	<div id="app-7">
+		<ol>
+			<todo-item v-for="item in groceryList" v-bind:todo="item" ></todo-item>
+		</ol>
+	</div>
+<hr>
+
+	<h3>8.</h3>
+	<div id="watch-example">
+		<p>
+			Ask a yes/no question:
+			<input v-model="question">
+		</p>
+		<p> {{ answer }} </p>
+	</div>
+<hr>
+
+	<h3>9.</h3>
+	<div id="class-example">
+		<p class="green" v-bind:class="classObject">这个段落的class有v-bind控制变化</p>
+	</div>
+<hr>
+
+	<h3>10.</h3>
+	<div id="style-example">
+		<p :style="styleObject"> {{ msg }}</p>
+	</div>
+<hr>
+
+    <h3>11.</h3>
+    <div id="v-forExample">
+    	<li v-for="(value, key, a) in object">
+    	<!-- 第二个的参数为键名  第三个参数为索引： -->
+    		{{a}} : {{key}} : {{ value }}
+    	</li>
+    </div>
+<hr>
+	
+	<h3>12.</h3>
+	<div id="todo-list-example">
+	  <input
+	    v-model="newTodoText"
+	    v-on:keyup.enter="addNewTodo"
+	    placeholder="Add a todo"
+	  >
+	  <ul>
+	    <li
+	      is="todo-item"
+	      v-for="(todo, index) in todos"
+	      v-bind:title="todo"
+	      v-on:remove="todos.splice(index, 1)"
+	    ></li>
+	  </ul>
+	</div>
+<hr>
+
+	<h3>13.</h3>
+	<div id="app13">computed   计算方法
+		<ul>
+			<li v-for="n in evenNumbers">
+				{{ n }}
+			</li>
+		</ul>
+	</div>
+<hr>
+
+	<h3>14.</h3>
+	<div id="app14">mothods   函数方法
+		<ul>
+			<li v-for="n in even(numbers)">
+				{{ n }}
+			</li>
+		</ul>
+	</div>
+<hr>
+
+	<h3>15.</h3>
+	<div id="app15">
+		<input type="checkbox" id="checkbox" v-model="checked">
+		<label for="checkbox"> {{checked}} </label>
+	</div>
+<hr>
+
+	<h3>16.</h3>
+	<div id="app16">
+		<span>Multiline message is:</span>
+		<p style="white-space: pre;"> {{message}} </p>
+		<br>
+		<textarea v-model="message" placeholder="add multiline lines"></textarea>
+	</div>
+<hr>
+
+	<h3>17.</h3>
+	<div id="app17">
+		<input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+		<label for="jack">Jack</label>
+		<input type="checkbox" id="john" value="John" v-model="checkedNames">
+		<label for="john">John</label>
+		<input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+		<label for="mike">Mike</label>
+		<br>
+		<span>Checked names: {{ checkedNames }}</span>
+	</div>
+<hr>
+
+	<h3>18.</h3>
+	<div id="app18">
+		<p> {{total}} </p>
+		<button-counter v-on:increment="incrementTotal"> </button-counter>
+		<button-counter v-on:increment="incrementTotal"> </button-counter>
+	</div>
+<hr>
+
+	<h3>19.</h3>
+	<div id="app19">
+		<button v-on:click="tary1">home</button>
+		<button v-on:click="tary2">posts</button>
+		<button v-on:click="tary3">archive</button>
+		<keep-alive>
+		<!-- 如果把切换出去的组件保留在内存中，可以保留它的状态或避免重新渲染。为此可以添加一个 keep-alive 指令参数： -->
+		<component v-bind:is="currentView">
+			
+		</component>
+		</keep-alive>
+	</div>
+<hr>
+
+	<h3>20.</h3>
+	<div id="app20">
+		<p v-colorSwatch='"green"'> {{message}} </p>
+	</div>
+<script type="text/javascript">
+	
+
+</script>
+<script type="text/javascript" src="base.js"></script>
+</body>
+
+
+</html>
+
+
+
+

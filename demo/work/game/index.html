@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/idangerous.swiper.css">
+    <title>游戏大厅</title>
+</head>
+<body>
+  <header class="swiper-container">
+			<div class="swiper-wrapper" id="swiperWrapper">
+				<a href="#" class="swiper-slide">
+					<img src="./data/imgs/danzhu.png" />
+				</a>
+				<a href="#" class="swiper-slide">
+					<img src="./data/imgs/danzhu.png" />
+				</a>
+				<a href="#" class="swiper-slide">
+					<img src="./data/imgs/danzhu.png" />
+				</a>
+			</div>
+			<div class="pagination"></div>
+		</header>
+
+  <ul class="type-list cf">
+  			<li class="mj">
+  				<a href="#majiang">
+  					<img src="src/img/type-majiang.png" />
+  					<p>麻将</p>
+  				</a>
+  			</li>
+  			<li class="kp" style="display: none;">
+  				<a href="#pailei">
+  					<img src="src/img/type-pailei.png" />
+  					<p>牌类</p>
+  				</a>
+  			</li>
+  			<li class="xyx" style="display: none;">
+  				<a href="#smallGame">
+  					<img src="src/img/type-smallgame.png" />
+  					<p>小游戏</p>
+  				</a>
+  			</li>
+  </ul>
+
+  <a id="PushGame" href="" class="push-game cf">
+			<img src="./data/imgs/icon-neimeng.png" />
+			<div>
+				<h4>翻金麻将</h4>
+				<p class="game-size">33.04MB</p>
+				<p class="game-cha">原汁原味的本地玩法</p>
+			</div>
+			<button class="push-btn">立即下载</button>
+	</a>
+
+  <div class="more-game">
+  			<span>更多游戏</span>
+  </div>
+
+    <div class="game-wrap mj">
+        <div class="title cf">
+			<a name="majiang">
+				<h5>麻将</h5>
+			</a>
+			<span>文明游戏，禁止赌博</span>
+		</div>
+    	<ul class="game-list cf" id="mj">
+			
+	    </ul>
+    </div>
+
+    <div class="game-wrap kp" style="display: none;">
+    	<div class="title cf">
+			<a name="pailei">
+				<h5>牌类</h5>
+			</a>
+			<span>文明游戏，禁止赌博</span>
+		</div>
+    	<ul class="game-list cf" id="kp">
+			
+    	</ul>
+    </div>
+
+    <div class="game-wrap xyx" style="display: none;">
+    	<div class="title cf">
+				<a name="smallGame">
+					<h5>小游戏</h5>
+				</a>
+				<span>文明游戏，禁止赌博</span>
+		</div>
+    	<ul class="game-list cf" id="xyx">
+			
+    	</ul>
+    </div>
+<button class="to-top"></button>
+</body>
+<script src="./src/js/idangerous.swiper.min.js"></script>
+<script src="./src/js/jquery-1.10.1.min.js"></script>
+<script src="./data/game.js"></script>
+<script src="./src/js/index.js"></script>
+<script>
+  window.onload=function () {
+    var w = document.documentElement.clientWidth;
+			if(w <= 800) {
+				document.documentElement.style.fontSize = 20 * w / 375 + 'px';
+			} else {
+				document.body.style.width = '800px';
+				document.body.style.margin = '0 auto';
+				document.documentElement.style.fontSize = 20 * 800 / 375 + 'px';
+			}
+
+    var swiper = new Swiper('.swiper-container',{
+      pagination: '.pagination',
+      autoplay: 3000,
+      autoplayDisableOnInteraction: false,
+			loop: true
+    });
+
+    window.onscroll = function() {
+				var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+		}
+
+    $('.to-top').click(function() {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+  }
+</script>
+</html>

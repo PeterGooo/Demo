@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* 清除默认样式的文件 - 基础 */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "微软雅黑", Helvetica, Arial, Tahoma;
+    line-height: 15px;
+    vertical-align: baseline;
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-text-size-adjust: none;
+    color: #000;
+    box-sizing: border-box;
+}
+div, p, dl, dd, h1, h2, h3, h4, h5, h6, a, b, u, em, input, textarea, button, select, form, section, label, span, td, li, nav, footer, body, ul, i { -webkit-box-sizing: border-box; -webkit-tap-highlight-color: rgba(0,0,0,0); word-wrap: break-word; word-break: break-all; padding: 0; margin: 0;-webkit-text-size-adjust:none}
+ul, li, ol {font-family: "微软雅黑", helvetica, arial; list-style: none; font-weight: normal; color: #999; font-size: 12px;}
+a { color: #333; text-decoration: none; }
+a, img, input, button, textarea { -webkit-touch-callout: none; }
+a:focus, a:active, a:hover, input, button, textarea { outline: none;}
+table { border-collapse: collapse; }
+.cf:after { content: ''; display: block; clear: both; }
+.tc{text-align:center;}
+.r{float:right;}
+.l{float:left;}

@@ -1,0 +1,59 @@
+  html{
+  	font-size: 10px;
+  	background: url(https://i.ytimg.com/vi/26IaOLJoMe4/maxresdefault.jpg) bottom center;
+  	background-size: cover;
+  }
+
+  body, html{
+  	padding: 0;
+  	margin: 0;
+  	font-family: sans-serif;
+  }
+
+  .keys{
+  	display: flex;	/*flex 布局, http://www.w3cplus.com/css3/a-guide-to-flexbox-new.html*/
+  	flex: 1;	
+  	min-height: 100vh;
+  	align-items: center;
+  	/*CSS align-items 属性以与justify-content相同的方式在侧轴方向上将当前行上的弹性元素对齐。*/
+  	justify-content: center;
+  }
+
+  .key{
+  	border: 3px solid black;
+  	border-radius: 50%;
+  	margin: 1rem;
+  	/*rem（font size of the root element）是指相对于根元素的字体大小的单位。简单的说它就是一个相对单位.*/
+  	/*响应式布局*/
+  	font-size: 1.5rem;
+  	padding: 1rem .5rem;
+  	transition: all .1s;
+  	width: 100px;
+  	text-align: center;
+  	color: white;
+  	background-color: rgba(0, 0, 0, 0.4);
+  	text-shadow: 0 0 10px black;
+  }
+
+.playing {
+  transform:scale(1.2);  /*由[sx, sy]描述指定一个二维缩放操作。如果sy 未指定，默认认为和sx的值相同。*/
+  /*transform 属性可以允许你修改css可视化模型的坐标空间.   移动(translate) 旋转(rotate) 缩放(scale) 倾斜(skew).*/ 
+  /*transform: rotate(90deg);*/   /*顺时针方向   一个指定的角度: deg;*/
+  /*transform: translate(0, 10px);*/  /*(x, y)  如果只有一个值, 那y方向上不移动*/  
+  /*transform: skew(30deg);*/   /*元素在X轴和Y轴方向以指定的角度倾斜。如果ay未提供，在Y轴上没有倾斜。*/
+  border-color:#ffc600;
+  box-shadow: 0 0 10px #ffc600;
+}
+
+  kbd {
+  display: block;
+  font-size: 40px;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  /*控制文本的大小写 英文单词.  lowercase:小写;  capitalize:首字母大写; 默认:none;  */
+  letter-spacing: 1px;   /*字母间距*/
+  color:#ffc600;
+}

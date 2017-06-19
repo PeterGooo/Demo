@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hi vue</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../vue.js"></script>
+	<script src="../learn-01/axios.min.js"></script>
+	<script src="../learn-01/lodash.min.js"></script>
+	
+</head>
+
+<body>
+	
+	<h3>1.</h3>
+	 <div id="app">
+		{{ message }}
+	</div>
+<hr>
+
+	<h3>3.</h3>
+	<div id="app-3">
+		<p v-if="seen">Now you see me</p>
+	</div>
+<hr>
+
+<script>
+	var app = new Vue({
+			el: '#app',
+			data: {
+				message: 'Hello Vue.js!'
+			}
+		})
+	var app3 = new Vue({
+		el: '#app-3',
+		data: {
+			seen: false
+		}
+	})
+</script>
+</body>
+</html>

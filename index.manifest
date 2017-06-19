@@ -1,0 +1,39 @@
+CACHE MANIFEST
+# v1.0.3
+
+CACHE:
+	#   html   **********
+	https://petergooo.github.io/index.html
+
+	#   js     **********
+	https://petergooo.github.io/javascripts/embed.js
+	https://petergooo.github.io/javascripts/jquery.js
+	https://petergooo.github.io/javascripts/I-by-l.min.js
+	https://petergooo.github.io/javascripts/skrollr.ie.min.js
+	https://petergooo.github.io/javascripts/skrollr.min.js
+
+	#  	css 	*********
+	https://petergooo.github.io/stylesheets/bootstrap.min.css
+	https://petergooo.github.io/stylesheets/fixed-positioning.css
+	https://petergooo.github.io/stylesheets/font.css
+	https://petergooo.github.io/stylesheets/github-dark.css
+	https://petergooo.github.io/stylesheets/ie.css
+	https://petergooo.github.io/stylesheets/index.css
+	https://petergooo.github.io/stylesheets/main.css
+	https://petergooo.github.io/stylesheets/normalize.css
+	https://petergooo.github.io/stylesheets/style.css
+
+	#	img 	***********
+	https://petergooo.github.io/images/baidu.jpg
+	https://petergooo.github.io/images/bir.jpg
+	https://petergooo.github.io/images/dog.ico
+	https://petergooo.github.io/images/caiquan.jpg
+	https://petergooo.github.io/images/future.jpeg
+	https://petergooo.github.io/images/lu.jpeg
+	https://petergooo.github.io/images/page.jpg
+	https://petergooo.github.io/images/sui-ji.jpg
+	https://petergooo.github.io/images/weather.jpg
+NETWORK:
+
+FALLBACK:
+	

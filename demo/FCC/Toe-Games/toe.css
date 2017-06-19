@@ -1,0 +1,70 @@
+  body{
+    background-color: #93db70;
+  	text-align: center;
+  }
+  .avatars{
+  	width: 320px;
+  	margin:10px auto;
+  	padding: 10px 65px;
+  }
+  .icon{
+  	cursor: pointer;
+  }
+  .gamer-icon{
+  	width: 71px;
+  }
+  .computer-icon{
+  	width:71px;
+  }
+  .vs{
+    font-size: 20px;
+    color: red;
+  }
+  .tic-tac-toe{
+  	background-color: #3299cc;
+  	width: 320px;
+  	height: 320px;
+  	margin: 30px auto 10px;
+  	padding: 10px;
+  }
+  .grid{
+    background-color: #38b0de;
+    color: white;
+  	height: 100px;
+  	width: 100px;
+    float: left;
+    margin-left: 5px;
+    font-size: 3em;
+  	cursor: pointer;
+  }
+
+  .result{
+    font-size: 3em;
+  }
+  .win{
+    color: green;
+  }
+  .lose{
+    color: red;
+  }
+  .draw{
+    color: blue;
+  }
+
+  footer a{
+  	text-decoration:none;
+  	color: #007fff;
+  }
+
+  .help{
+    float: left;
+    font-size: 10px;
+    text-align: left;
+  }
+
+
+
+
+
+
+

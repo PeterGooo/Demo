@@ -1,0 +1,143 @@
+
+  body{
+  	background-image: url("http://zhinian.info/demo/FCC/Simon-Game/images/bg_retina_wood.png");
+  }
+  div{
+  	margin: 20px;
+  }
+ 
+  span{
+  	font-size: 20px;
+  	color: green;
+  }
+
+  span::before{
+  	content: ">>";
+  	color: red;
+  }
+  span::after{
+  	content: "<<";
+  	color: red;
+  }
+
+
+  .mohu h2, p{
+  	color:transparent;
+  	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .img img{
+  	width: 500px;
+  	height: 350px;
+  }
+  .img img.imgChange{
+  	filter: grayscale(100%);
+  	-webkit-filter: grayscale(100%);
+  	-moz-filter: grayscale(100%);
+  	-ms-filter: grayscale(100%);
+  	-o-filter:grayscale(100%);
+  }
+
+  .calc{
+  	width:200px;
+	height:300px;
+	border:1px solid red;
+  }
+  .calc .b{
+  	margin: 0;
+  	height:100px;
+	background-color: orange;
+  }
+  .calc .c{
+  	margin: 0;
+  	height: calc(100% - 100px);
+	background-color: green;
+  }
+
+  .triangle{
+  	width: 0;
+  	height: 0;
+  	border-width: 40px;
+  	border-style: solid;
+  	border-color: transparent transparent red transparent;
+  }
+
+/*  body:bofore{
+  	content: " ";
+  	position: fixed;
+  	top: -10px;
+  	left: 0;
+  	width: 100%;
+  	height: 10px;
+
+  	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+  	z-index: 100;
+  }
+  */
+
+  .text-gradient{
+  	display: inline-block;
+  	color: green;
+  	font-size: 50px;
+  	background-image:  -webkit-gradient(linear, 0 0,0 bottom, from(rgba(128, 0, 0, 1)), to(rgba(51,51,51,1)));
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color:transparent;
+  }
+  .gradient .a01{
+  	width: 100px;
+  	height: 100px;
+  	background: radial-gradient(red, yellow, rgba(30, 144, 255, 0.6));
+  }
+  .gradient .a02{
+  	width: 100px;
+  	height: 100px;
+  	background: radial-gradient(red 5%, yellow 25%, #1E90FF 50%);
+  }
+  .gradient .a03{
+  	width: 150px;
+  	height: 100px;
+  	background: radial-gradient(ellipse closest-side, red, yellow 10%, #1E90FF 50%, white);
+  	border: 1px solid red;
+  }
+  .gradient .a04{
+  	width: 150px;
+  	height: 100px;
+  	background: repeating-linear-gradient(-45deg, red, red 5px, white 5px, white 10px);
+  }
+  .gradient .a05{
+  	width: 240px;
+  	height: 180px;
+  	background-color: #571;
+background-image: repeating-linear-gradient(90deg, transparent, transparent 50px,
+      rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px, transparent 56px, transparent 63px,
+      rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px, transparent 69px, transparent 116px,
+      rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(255, 127, 0, 0.25) 50px,
+      rgba(255, 127, 0, 0.25) 56px, transparent 56px, transparent 63px, rgba(255, 127, 0, 0.25) 63px,
+      rgba(255, 127, 0, 0.25) 69px, transparent 69px, transparent 116px, rgba(255, 206, 0, 0.25) 116px,
+      rgba(255, 206, 0, 0.25) 166px),
+repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(143, 77, 63, 0.25) 5px,
+      rgba(143, 77, 63, 0.25) 10px),
+repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(143, 77, 63, 0.25) 5px,
+      rgba(143, 77, 63, 0.25) 10px);
+  }
+  .gradient .a06{
+  	width: 150px;
+  	height: 150px;
+	background: repeating-radial-gradient(black, black 5px, white 5px, white 10px);
+  }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+      body {
+  font-family: "Microsoft YaHei UI";
+}
+.outter-box {
+  max-width: 60%;
+  margin: 10px auto;
+  //display: flex;
+}
+.top-bar {
+  background-color: #666;
+  min-height: 90px;
+  min-width: 382px;
+  margin: 2px 0;
+  display: flex;
+  //flex-row: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-size: 3em;
+  color: #eee;
+  display: flex;
+  margin-left: 20px;
+}
+.switchers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.switcher {
+  background-color: #eee;
+  height: 16px;
+  width: 80px;
+  margin: 3px 0 3px 0;
+  cursor: pointer;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  align-items: center;
+}
+#online, #offline {
+  width: 16px;
+  transition: width .5s linear;
+}
+#online:hover, #offline:hover {
+  width: 80px;
+  transition: width .5s linear;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+#dot-all {
+  background-color: #666;
+}
+#dot-online {
+  background-color: #5a5;
+}
+#dot-offline {
+  background-color: #a55;
+}
+.status {
+  color: #666;
+  font-size: .9em;
+  text-align: right;
+  width: 62px;
+}
+#status-online, #status-offline {
+  display: none;
+}
+.user-item {
+  min-height: 70px;
+  line-height: 70px;
+  margin: 2px 0;
+  padding: 0 10px 0 10px;
+  //display: flex;
+  //align-items: center;
+  //justify-content: space-between;
+  vertical-align: middle;
+}
+.online-user {  
+  background-color: #5a5;
+}
+.offline-user {
+  background-color: #a55;
+}
+.avatar {
+  width: 80px;
+  //position: static;
+ //   +position: absolute;
+ //   top: 50%;
+  //text-align: center;
+  //height: 50px;
+  border-radius: 50%;
+  //border: 2px solid #eee;
+  //margin: 0 10px;
+  margin-top: 10px;
+}
+.username a {
+  text-decoration: none;
+}
+.username-online a {
+  color: #a55;
+}
+.username-offline a {
+  color: #5a5;
+}
+.brief-status {
+  color: #eee;
+}
+.footer {
+  background-color: #666;
+  height: 10px;
+  margin: 2px 0;
+}
